@@ -312,6 +312,7 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 include $(LOCAL_PATH)/vendor_prop.mk
+include $(LOCAL_PATH)/system_prop.mk
 
 # Qualcomm
 PRODUCT_COPY_FILES += \
