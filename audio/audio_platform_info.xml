@@ -31,7 +31,7 @@
         <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="10"/>
         <device name="SND_DEVICE_IN_CAMCORDER_STEREO_DMIC" acdb_id="10"/>
         <device name="SND_DEVICE_IN_CAMCORDER_STEREO_DMIC_REVERSE" acdb_id="10"/>
-        <device name="SND_DEVICE_IN_UNPROCESSED_MIC" acdb_id="143"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_MIC" acdb_id="1059"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_STEREO_MIC" acdb_id="144"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" acdb_id="145"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" acdb_id="146"/>
