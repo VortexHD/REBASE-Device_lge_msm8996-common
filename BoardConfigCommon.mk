@@ -118,6 +118,10 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 TARGET_FS_CONFIG_GEN += $(COMMON_PATH)/config.fs
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_lge-msm8996
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lge-msm8996
+
 # IR
 TARGET_USE_LGE_IR := true
 
