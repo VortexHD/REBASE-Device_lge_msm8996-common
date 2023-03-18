@@ -102,25 +102,35 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.loc.nlp_name=com.qualcomm.location \
     ro.gps.agps_provider=1
 
-# Graphics
+# Graphics & Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.display.cabl=0 \
+    ro.opengles.version=196610 \
+    ro.hardware.vulkan=adreno \
+    ro.hardware.egl=adreno \
+    sdm.debug.disable_rotator_split=1 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     debug.sf.hw=1 \
     debug.egl.hw=1 \
     debug.gralloc.gfx_ubwc_disable=0 \
-    debug.gralloc.enable_fb_ubwc=1 \
+    debug.hwui.use_partial_updates=true \
+    debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
+    renderthread.skia.reduceopstasksplitting=true
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
-    sdm.perf_hint_window=50 \
+    sdm.perf_hint_window=25 \
+    sdm.debug.disable_skip_validate=1 \
     persist.hwc.enable_vds=1 \
-    sdm.debug.disable_rotator_split=1
+
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.texture_cache_size=96 \
-    ro.hwui.layer_cache_size=64 \
-    ro.hwui.r_buffer_cache_size=12 \
-    ro.hwui.path_cache_size=39 \
-    ro.hwui.gradient_cache_size=1 \
+    ro.hwui.texture_cache_size=128 \
+    ro.hwui.layer_cache_size=128 \
+    ro.hwui.r_buffer_cache_size=24 \
+    ro.hwui.path_cache_size=64 \
+    ro.hwui.gradient_cache_size=4 \
     ro.hwui.drop_shadow_cache_size=7 \
     ro.hwui.texture_cache_flushrate=0.4 \
     ro.hwui.text_small_cache_width=2048 \
