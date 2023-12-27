@@ -69,10 +69,10 @@ static const char *cts_late_prop_val[] =
         { "green", nullptr };
 
 static const char *extra_prop_key[] =
-        { "ro.build.flavor", nullptr };
+        { "ro.build.flavor", "ro.build.display.id", "ro.build.id", "ro.build.version.security_patch", nullptr };
 		
 static const char *extra_prop_val[] =
-        { "user", nullptr };
+        { "user", "OPR1.170623.032", "OPR1.170623.032", "2018-11-01", nullptr };
 		
 static void workaround_cts_properties() {
 
